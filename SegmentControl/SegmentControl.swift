@@ -129,7 +129,7 @@ class SegmentControl : UIControl {
   }
 
   //Title font
-  var titleFont:UIFont = UIFont(name: "helvetica", size: 12)! {
+  var titleFont:UIFont = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption1) {
     didSet{
       updateButtonStatus()
     }

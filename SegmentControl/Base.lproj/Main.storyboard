@@ -26,7 +26,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -38,12 +38,43 @@
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="segmentSelectedColor">
-                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="concatenatedTitle" value="One|Two|three|four|five"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="concatenatedTitle" value="One|Two|three"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="segmentControlStateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="sSl-yZ-IKf"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYT-qa-dkT" customClass="SegmentControl" customModule="SegmentControl" customModuleProvider="target">
+                                <rect key="frame" x="40" y="311" width="520" height="81"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="hN0-YU-x4x"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="segmentCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="segmentSelectedColor">
+                                        <color key="value" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="concatenatedTitle" value="One|Two|three"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalSegmentColor">
+                                        <color key="value" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="segmentControlStateChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="T9U-ja-PI7"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -51,7 +82,10 @@
                         <constraints>
                             <constraint firstItem="QsU-Aj-4td" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="0Nv-H4-MF8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QsU-Aj-4td" secondAttribute="trailing" constant="20" id="64T-iD-N6m"/>
+                            <constraint firstItem="PYT-qa-dkT" firstAttribute="trailing" secondItem="QsU-Aj-4td" secondAttribute="trailing" id="6TC-FM-ZUh"/>
+                            <constraint firstItem="PYT-qa-dkT" firstAttribute="leading" secondItem="QsU-Aj-4td" secondAttribute="leading" id="8pP-TR-0kd"/>
                             <constraint firstItem="QsU-Aj-4td" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="DG2-p9-GnM"/>
+                            <constraint firstItem="PYT-qa-dkT" firstAttribute="top" secondItem="QsU-Aj-4td" secondAttribute="bottom" constant="70" id="L3l-Ry-kMI"/>
                         </constraints>
                     </view>
                 </viewController>
